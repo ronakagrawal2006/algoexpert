@@ -9,11 +9,13 @@ def twoNumberSum(array, target_sum):
                 continue
             if first_int + second_int == target_sum:
                 return [first_int, second_int]
-
     return []
 
 
+# HashSet - Key
+# HashMap - key,value
 def twoNumberSum_2(array, target_sum):
+    array = set(array)
     for current_int in array:
         expected_num = target_sum - current_int
         if expected_num == current_int:
