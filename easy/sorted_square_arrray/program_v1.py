@@ -14,3 +14,5 @@ def sortedSquaredArray(arr):
             end_i -= 1
         res[i] = arr[sq_i]*arr[sq_i]
     return res
+
+    
